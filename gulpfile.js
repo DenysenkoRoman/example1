@@ -55,6 +55,9 @@ function styles() {
       return src([
             'node_modules/normalize.css/normalize.css',
             'node_modules/slick-carousel/slick/slick.css',
+            // https://kenwheeler.github.io/slick/
+            'node_modules/animate.css/animate.css',
+            // https://animate.style/
             'app/scss/style.scss'])
   //      .pipe(sass())
       .pipe(scss({ outputStyle: 'compressed' }))
