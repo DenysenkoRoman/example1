@@ -156,10 +156,80 @@ a {
   }
 }
 .surf,
-.travel {
+.holder {
   padding: 160px 0 10px;
 }
 
-.travel {
+.holder {
   padding-bottom: 220px;
+}
+.star-list {
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: -25px;
+    }
+  }
+}
+
+.quantity {
+  display: inline-block;
+  // float: left;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 50px;
+  height: 42px;
+  display: block;
+  border: none;
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 800;
+  color: #fff;
+  background-color: transparent;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 35px;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  right: 0;
+  bottom: 0;
+}
+
+.quantity-button.quantity-down {
+  right: 25px;
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
 }
